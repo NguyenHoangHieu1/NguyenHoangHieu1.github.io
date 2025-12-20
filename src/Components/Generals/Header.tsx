@@ -1,14 +1,14 @@
-import { PropsWithChildren, ReactElement, ReactNode, useEffect } from "react"
-import { useState } from "react"
-import Blur from "../UI/Blur"
-import { NavLink } from "react-router-dom"
-import BackDrop from "../UI/Backdrop"
+import { PropsWithChildren, ReactElement, ReactNode, useEffect } from "react";
+import { useState } from "react";
+import Blur from "../UI/Blur";
+import { NavLink } from "react-router-dom";
+import BackDrop from "../UI/Backdrop";
 interface props {
-  children?: React.ReactNode
+  children?: React.ReactNode;
 }
 
 const Header: React.FC<props> = (props) => {
-  const [theme, setTheme] = useState<string>("light")
+  const [theme, setTheme] = useState<string>("light");
   // useEffect(() => {
   //   if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
   //     setTheme("dark")
@@ -19,33 +19,33 @@ const Header: React.FC<props> = (props) => {
 
   useEffect(() => {
     if (theme === "dark") {
-      document.documentElement.classList.add("dark")
+      document.documentElement.classList.add("dark");
     } else {
-      document.documentElement.classList.remove("dark")
+      document.documentElement.classList.remove("dark");
     }
-  }, [theme])
+  }, [theme]);
 
   const handleThemeSwitch = () => {
-    setTheme(theme === "dark" ? "light" : "dark")
-  }
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
 
-  const [mode, setMode] = useState(false)
-  const [mobileNav, setMobileNav] = useState(false)
-  const [blurBg, setBlurBg] = useState(false)
+  const [mode, setMode] = useState(false);
+  const [mobileNav, setMobileNav] = useState(false);
+  const [blurBg, setBlurBg] = useState(false);
 
-  let blurEl: ReactElement = <></>
+  let blurEl: ReactElement = <></>;
 
   if (blurBg) {
-    blurEl = <Blur onChangeBlur={changeMobileNav} />
+    blurEl = <Blur onChangeBlur={changeMobileNav} />;
   }
 
   function changeMobileNav() {
-    setMobileNav(!mobileNav)
-    setBlurBg(!blurBg)
+    setMobileNav(!mobileNav);
+    setBlurBg(!blurBg);
   }
   function changeMode() {
-    setMode(!mode)
-    handleThemeSwitch()
+    setMode(!mode);
+    handleThemeSwitch();
   }
   return (
     <header className="p-3 z-50 sticky top-0  w-full     backdrop-blur-md  text-white ">
@@ -78,6 +78,18 @@ const Header: React.FC<props> = (props) => {
                 }
               >
                 About
+              </NavLink>
+            </li>
+            <li className="hover:text-slate-900 text-slate-900/70 hover:dark:text-white dark:text-white/50 cursor-pointer transition  ">
+              <NavLink
+                to="/blogs"
+                className={(navData) =>
+                  navData.isActive
+                    ? "text-sky-300 hover:text-sky-200 font-bold"
+                    : "hover:text-slate-900 text-slate-900/70 hover:dark:text-white dark:text-white/50"
+                }
+              >
+                Blogs
               </NavLink>
             </li>
             <li className="hover:text-slate-900 cursor-pointer transition text-slate-900/70 hover:dark:text-white dark:text-white/50">
@@ -137,6 +149,18 @@ const Header: React.FC<props> = (props) => {
                     </li>
                     <li>
                       <NavLink
+                        to="/blogs"
+                        className={(navData) =>
+                          navData.isActive
+                            ? "text-sky-300 hover:text-sky-200 font-bold"
+                            : "hover:text-white text-white/50"
+                        }
+                      >
+                        Blogs
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink
                         to="/contact"
                         className={(navData) =>
                           navData.isActive
@@ -176,7 +200,7 @@ const Header: React.FC<props> = (props) => {
         </div>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

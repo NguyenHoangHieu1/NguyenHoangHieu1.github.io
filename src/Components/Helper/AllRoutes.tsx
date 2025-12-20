@@ -1,10 +1,12 @@
-import { lazy, PropsWithChildren } from "react"
-import { Route, Routes } from "react-router-dom"
+import { lazy, PropsWithChildren } from "react";
+import { Route, Routes } from "react-router-dom";
 
-const SmallIntro = lazy(() => import("../About/SmallIntro"))
-const Techs = lazy(() => import("../About/Techs"))
-const Contact = lazy(() => import("../Contact/Contact"))
-const Intro = lazy(() => import("../HomePage/Intro"))
+const SmallIntro = lazy(() => import("../About/SmallIntro"));
+const Techs = lazy(() => import("../About/Techs"));
+const Contact = lazy(() => import("../Contact/Contact"));
+const Intro = lazy(() => import("../HomePage/Intro"));
+const BlogList = lazy(() => import("../Blogs/BlogList"));
+const BlogViewer = lazy(() => import("../Blogs/BlogViewer"));
 
 const AllRoutes: React.FC<PropsWithChildren> = (props) => {
   return (
@@ -30,8 +32,10 @@ const AllRoutes: React.FC<PropsWithChildren> = (props) => {
         }
       />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/blogs" element={<BlogList />} />
+      <Route path="/blogs/:slug" element={<BlogViewer />} />
     </Routes>
-  )
-}
+  );
+};
 
-export default AllRoutes
+export default AllRoutes;
