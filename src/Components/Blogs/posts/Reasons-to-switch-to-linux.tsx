@@ -20,7 +20,7 @@ export const meta = {
   title: "Reasons to Switch to Linux",
   date: "2025-12-03",
   tags: ["Linux", "OS", "Productivity"],
-  thumbnail: "/linux.png", // Place your image in public folder
+  thumbnail: "/linux.webp", // Place your image in public folder
   description:
     "Discover the benefits of switching to Linux for improved productivity and a better computing experience.",
 };
