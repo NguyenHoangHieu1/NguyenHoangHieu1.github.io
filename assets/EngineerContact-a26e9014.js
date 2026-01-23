@@ -1,8 +1,8 @@
-import{r as o,j as e}from"./index-9d1965aa.js";const l=()=>{const[s,t]=o.useState(null),r=`// contact.config.ts
+import{r as o,j as e}from"./index-c9e3ae44.js";const l=()=>{const[s,t]=o.useState(null),r=`// contact.config.ts
 export const contactInfo = {
   name: "Nguyen Hoang Hieu",
   role: "Fullstack Software Engineer",
-  location: "Ho Chi Minh City, Vietnam",
+  location: "Da Nang City, Vietnam",
   timezone: "UTC+7",
   
   // Primary contact methods
