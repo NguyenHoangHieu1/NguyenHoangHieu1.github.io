@@ -1,8 +1,8 @@
-import{r as a,j as e,L as r}from"./index-a5336e94.js";const p=()=>{const[i,c]=a.useState(new Date),[l,o]=a.useState(!0);a.useEffect(()=>{const s=setInterval(()=>{c(new Date)},1e3),t=setInterval(()=>{o(d=>!d)},530);return()=>{clearInterval(s),clearInterval(t)}},[]);const x=[{key:"STATUS",value:"Available for work",color:"text-emerald-500"},{key:"LOCATION",value:"Da Nang City, VN",color:"text-white"},{key:"TIMEZONE",value:i.toLocaleTimeString("en-US",{hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:!1}),color:"text-white"},{key:"ROLE",value:"Fullstack Engineer",color:"text-white"}],n=`// Currently working on
+import{r as a,j as e,L as r}from"./index-aa5c4324.js";const p=()=>{const[i,c]=a.useState(new Date),[l,o]=a.useState(!0);a.useEffect(()=>{const s=setInterval(()=>{c(new Date)},1e3),t=setInterval(()=>{o(d=>!d)},530);return()=>{clearInterval(s),clearInterval(t)}},[]);const x=[{key:"STATUS",value:"Available for work",color:"text-emerald-500"},{key:"LOCATION",value:"Da Nang City, VN",color:"text-white"},{key:"TIMEZONE",value:i.toLocaleTimeString("en-US",{hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:!1}),color:"text-white"},{key:"ROLE",value:"Fullstack Engineer",color:"text-white"}],n=`// Currently working on
 const projects = [
   {
-    name: "E-commerce Platform",
-    stack: ["React", "Node", "PostgreSQL"],
+    name: "Financy",
+    stack: ["React Native", "SQLite"],
     status: "In Progress"
   },
   {
