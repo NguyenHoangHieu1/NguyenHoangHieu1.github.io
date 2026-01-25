@@ -1,0 +1,37 @@
+import{r as o,j as e}from"./index-a5336e94.js";const l=()=>{const[n,t]=o.useState(null),r=`// contact.config.ts
+export const contactInfo = {
+  name: "Nguyen Hoang Hieu",
+  role: "Fullstack Software Engineer",
+  location: "Da Nang City, Vietnam",
+  timezone: "UTC+7",
+  
+  // Primary contact methods
+  email: "hoanghieufro@gmail.com",
+  phone: "+84 0917077967",
+  
+  // Social links
+  social: {
+    github: "https://github.com/NguyenHoangHieu1",
+    linkedin: "https://linkedin.com/in/nguyenhoanghieu1",
+    twitter: "https://twitter.com",
+    discord: "username#0000"
+  },
+  
+  // Availability
+  status: {
+    available: true,
+    openToWork: true,
+    openToFreelance: true,
+    preferredWorkType: ["Full-time", "Part-time", "Remote", "Contract"]
+  },
+  
+  // Technical preferences
+  interests: [
+    "Full-stack Development",
+    "System Design",
+    "Real-time Applications",
+    "Cloud Architecture",
+    "Open Source"
+  ]
+};`,i=(a,s)=>{navigator.clipboard.writeText(a),t(s),setTimeout(()=>t(null),2e3)};return e.jsx("section",{className:"relative py-24 overflow-hidden",children:e.jsxs("div",{className:"container mx-auto px-6 lg:px-12 relative z-10",children:[e.jsxs("div",{className:"mb-16 max-w-3xl",children:[e.jsxs("div",{className:"flex items-center gap-3 mb-4",children:[e.jsx("div",{className:"w-2 h-2 bg-orange-500"}),e.jsx("span",{className:"font-mono text-[10px] text-zinc-600 tracking-widest uppercase",children:"Get In Touch"})]}),e.jsx("h1",{className:"text-5xl lg:text-6xl font-bold text-white tracking-tight mb-6",children:"Contact"}),e.jsx("p",{className:"text-lg text-zinc-400 leading-relaxed",children:"Looking for a developer? Let's build something together. Reach out through any of the channels below."})]}),e.jsxs("div",{className:"grid lg:grid-cols-2 gap-8 max-w-6xl",children:[e.jsxs("div",{className:"border border-zinc-800 bg-zinc-950/80",children:[e.jsxs("div",{className:"border-b border-zinc-800 bg-zinc-900/50 px-6 py-3 flex items-center justify-between",children:[e.jsxs("div",{className:"flex items-center gap-3",children:[e.jsx("span",{className:"font-mono text-xs text-zinc-500",children:"contact.config.ts"}),e.jsx("div",{className:"w-1.5 h-1.5 rounded-full bg-emerald-500"})]}),e.jsx("span",{className:"font-mono text-[10px] text-zinc-600",children:"READ-ONLY"})]}),e.jsxs("div",{className:"flex",children:[e.jsx("div",{className:"flex flex-col border-r border-zinc-800 bg-zinc-900/30 py-4 px-3 font-mono text-[11px] text-zinc-600 select-none",children:r.split(`
+`).map((a,s)=>e.jsx("div",{className:"leading-6 text-right",children:s+1},s))}),e.jsx("div",{className:"flex-1 p-4 font-mono text-[13px] leading-6 overflow-x-auto",children:e.jsx("pre",{className:"text-zinc-400",children:e.jsx("code",{children:r})})})]})]}),e.jsxs("div",{className:"space-y-4",children:[e.jsxs("div",{className:"border border-zinc-800 bg-zinc-950/50",children:[e.jsx("div",{className:"border-b border-zinc-800 bg-zinc-900/30 px-4 py-3",children:e.jsx("span",{className:"font-mono text-[10px] text-zinc-600 uppercase tracking-wider",children:"Primary Email"})}),e.jsx("div",{className:"p-4",children:e.jsxs("div",{className:"flex items-center justify-between gap-4",children:[e.jsx("a",{href:"mailto:hoanghieufro@gmail.com",className:"text-orange-500 hover:text-orange-400 transition-colors break-all font-mono text-sm",children:"hoanghieufro@gmail.com"}),e.jsx("button",{onClick:()=>i("hoanghieufro@gmail.com","email"),className:"px-3 py-1 border border-zinc-800 text-zinc-500 hover:border-orange-500 hover:text-orange-500 transition-colors font-mono text-[10px] whitespace-nowrap",children:n==="email"?"COPIED":"COPY"})]})})]}),e.jsxs("div",{className:"border border-zinc-800 bg-zinc-950/50",children:[e.jsx("div",{className:"border-b border-zinc-800 bg-zinc-900/30 px-4 py-3",children:e.jsx("span",{className:"font-mono text-[10px] text-zinc-600 uppercase tracking-wider",children:"Phone"})}),e.jsx("div",{className:"p-4",children:e.jsxs("div",{className:"flex items-center justify-between gap-4",children:[e.jsx("a",{href:"tel:+84971668861",className:"text-orange-500 hover:text-orange-400 transition-colors font-mono text-sm",children:"+84 0917077967"}),e.jsx("button",{onClick:()=>i("+84971668861","phone"),className:"px-3 py-1 border border-zinc-800 text-zinc-500 hover:border-orange-500 hover:text-orange-500 transition-colors font-mono text-[10px]",children:n==="phone"?"COPIED":"COPY"})]})})]}),e.jsxs("div",{className:"border border-zinc-800 bg-zinc-950/50",children:[e.jsx("div",{className:"border-b border-zinc-800 bg-zinc-900/30 px-4 py-3",children:e.jsx("span",{className:"font-mono text-[10px] text-zinc-600 uppercase tracking-wider",children:"Social Links"})}),e.jsxs("div",{className:"p-4 space-y-3",children:[e.jsxs("a",{href:"https://github.com/NguyenHoangHieu1",target:"_blank",rel:"noopener noreferrer",className:"flex items-center justify-between group",children:[e.jsx("span",{className:"font-mono text-sm text-zinc-400 group-hover:text-orange-500 transition-colors",children:"github.com/NguyenHoangHieu1"}),e.jsx("span",{className:"text-zinc-600 group-hover:text-orange-500 transition-colors",children:"→"})]}),e.jsxs("a",{href:"https://linkedin.com/in/nguyenhoanghieu1",target:"_blank",rel:"noopener noreferrer",className:"flex items-center justify-between group",children:[e.jsx("span",{className:"font-mono text-sm text-zinc-400 group-hover:text-orange-500 transition-colors",children:"linkedin.com/in/nguyenhoanghieu1"}),e.jsx("span",{className:"text-zinc-600 group-hover:text-orange-500 transition-colors",children:"→"})]})]})]}),e.jsxs("div",{className:"border border-zinc-800 bg-zinc-950/50",children:[e.jsx("div",{className:"border-b border-zinc-800 bg-zinc-900/30 px-4 py-3",children:e.jsx("span",{className:"font-mono text-[10px] text-zinc-600 uppercase tracking-wider",children:"Current Status"})}),e.jsxs("div",{className:"p-4 space-y-2",children:[e.jsxs("div",{className:"flex items-center gap-3",children:[e.jsx("div",{className:"w-2 h-2 bg-emerald-500 rounded-full animate-pulse"}),e.jsx("span",{className:"font-mono text-sm text-zinc-400",children:"Available for work"})]}),e.jsxs("div",{className:"flex items-center gap-3",children:[e.jsx("div",{className:"w-2 h-2 bg-blue-500 rounded-full"}),e.jsx("span",{className:"font-mono text-sm text-zinc-400",children:"Open to freelance projects"})]}),e.jsxs("div",{className:"flex items-center gap-3",children:[e.jsx("div",{className:"w-2 h-2 bg-orange-500 rounded-full"}),e.jsx("span",{className:"font-mono text-sm text-zinc-400",children:"Remote work preferred"})]})]})]}),e.jsx("div",{className:"border border-zinc-800 bg-zinc-950/50",children:e.jsx("div",{className:"p-4",children:e.jsxs("div",{className:"flex items-start gap-3",children:[e.jsx("span",{className:"text-zinc-600 mt-1",children:"⚡"}),e.jsxs("div",{children:[e.jsxs("p",{className:"font-mono text-sm text-zinc-400 mb-1",children:["Typical response time:"," ",e.jsx("span",{className:"text-orange-500",children:"24-48 hours"})]}),e.jsx("p",{className:"font-mono text-xs text-zinc-600",children:"Timezone: UTC+7 (Ho Chi Minh City)"})]})]})})})]})]}),e.jsx("div",{className:"mt-16 pt-16 border-t border-zinc-900 text-center",children:e.jsx("p",{className:"font-mono text-[11px] text-zinc-600",children:"Feel free to reach out for opportunities, collaborations, or just to say hi"})})]})})};export{l as default};
