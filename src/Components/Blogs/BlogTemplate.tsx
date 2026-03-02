@@ -1,4 +1,5 @@
 import React, { PropsWithChildren } from "react";
+import { Link } from "react-router-dom";
 
 type BlogTemplateProps = PropsWithChildren<{
   title: string;
@@ -15,41 +16,53 @@ const BlogTemplate: React.FC<BlogTemplateProps> = ({
   children,
 }) => {
   return (
-    <article className="container mx-auto max-w-3xl py-8 px-4">
-      <header className="mb-6">
-        <h1 className="text-3xl font-bold mb-2">{title}</h1>
-        {date && <time className="text-sm text-gray-500">{date}</time>}
-        {tags && (
-          <div className="mt-3">
-            {tags.map((t) => (
-              <span
-                key={t}
-                className="text-xs bg-gray-100 dark:bg-gray-700 rounded px-2 py-1 mr-2"
-              >
-                {t}
-              </span>
-            ))}
-          </div>
-        )}
+    <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12">
+      <Link
+        to="/blogs"
+        className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors inline-flex items-center gap-1 mb-8"
+      >
+        &larr; Back to blog
+      </Link>
+
+      <header className="mb-8">
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-3">
+          {title}
+        </h1>
+        <div className="flex flex-wrap items-center gap-3">
+          {date && (
+            <time className="text-sm text-gray-500 dark:text-gray-500">
+              {date}
+            </time>
+          )}
+          {tags && (
+            <div className="flex flex-wrap gap-1.5">
+              {tags.map((t) => (
+                <span
+                  key={t}
+                  className="text-xs px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400"
+                >
+                  {t}
+                </span>
+              ))}
+            </div>
+          )}
+        </div>
       </header>
 
       {thumbnail && (
-        <div className="mb-8">
+        <div className="mb-8 rounded-lg overflow-hidden">
           <img
             src={thumbnail}
             alt={title}
-            className="w-full rounded-lg shadow-lg"
+            className="w-full rounded-lg"
+            loading="lazy"
           />
         </div>
       )}
 
-      <section className="prose dark:prose-invert max-w-none">
+      <section className="prose prose-gray dark:prose-invert max-w-none">
         {children}
       </section>
-
-      <footer className="mt-12 text-sm text-gray-600">
-        Thanks for reading.
-      </footer>
     </article>
   );
 };

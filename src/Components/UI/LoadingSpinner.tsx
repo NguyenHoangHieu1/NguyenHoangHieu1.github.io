@@ -1,12 +1,9 @@
-import { PropsWithChildren } from "react"
-
-const LoadingSpinner: React.FC<PropsWithChildren> = (props) => {
+const LoadingSpinner = () => {
   return (
-    <main className=" bg-stone-200 dark:bg-stone-800 border-2 dark:border-stone-100 border-stone-700 z-20 dark:text-white p-10 text-center rounded-3xl fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  aspect-square ">
-      <i className="fa-duotone  text-9xl  animate-spin fa-spinner-third"></i>
-      <h1 className=" text-4xl">Loading...</h1>
-    </main>
-  )
-}
+    <div className="flex items-center justify-center py-32">
+      <div className="w-8 h-8 border-2 border-gray-300 dark:border-gray-700 border-t-teal-600 dark:border-t-teal-400 rounded-full animate-spin" />
+    </div>
+  );
+};
 
-export default LoadingSpinner
+export default LoadingSpinner;
