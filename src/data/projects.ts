@@ -7,6 +7,7 @@ export type Project = {
   liveUrl?: string;
   githubUrl?: string;
   thumbnail?: string; // path relative to /public
+  video?: string;
 };
 
 const projects: Project[] = [
@@ -58,6 +59,53 @@ Thank you, and I'll see you in the future :)
     ],
     liveUrl: "https://chatty-anon.vercel.app/",
     // githubUrl: "https://github.com/you/repo",
+    // thumbnail: "/your-thumbnail.png",
+  },
+  {
+    slug: "financy",
+    title: "Financy - Financial app for everyone",
+    summary: "Really need this nowadays",
+    description: `Hello there, I am not a good person of keeping my own money.
+    
+    I keep forgetting my money, Like literally, every single time I lend or owe people's money, I will forget about it, and it mostly results in me losing money since I don't get back the money I lent people, and that sucks.
+
+    But it is what it is, so I created this app in my free time for me to use it, so that I can keep track of my money easier, I have added a lot of features that tailor to my needs so you know it's pretty good.
+
+    It's not finished yet, like I said it's just a hobby project, but I hope you will like it and you can benefit from it, you can build APK using expo and install on your phone, only android for now since I have no IOS phone to build and also a Mac
+
+    `,
+    tech: ["React Native", "Expo", "SQLite"],
+    githubUrl: "https://github.com/NguyenHoangHieu1/Financy",
+    video:
+      "https://drive.google.com/file/d/1SQDPGU1UxPwOp4rPrSKYK0xp-LB1yYYI/view?usp=drive_link",
+    // thumbnail: "/your-thumbnail.png",
+  },
+  {
+    slug: "zen",
+    title: "Zen - Social media",
+    summary: "I created this because I love challenges",
+    description: `Hello there, This is an app I created for fun in my college days.
+    It's not much, It's just a really old and broken Zen social media, I wished I could fix it again, but welps, pretty bad, but it does work though, you just need to work for it, need to fix it a little and I promise you it will work flawlessly.
+
+    The source code of the backend is marvelours (IDK how to spell this), because I spent so much time trying to make the codes as typed as possible, so if you look into the backend, you will see a really good type system, so yeah give yourself a chance to look into that and you might learn something.
+
+    `,
+    tech: ["Next.JS", "Nest.JS", "Mongodb", "Redis", "Supabase"],
+    githubUrl: "https://github.com/NguyenHoangHieu1/Zen-BE",
+    video:
+      "https://drive.google.com/file/d/1RBQMMQUuVLHZ8BS3BlKkZgXs0shb18D0/view?usp=drive_link",
+    // thumbnail: "/your-thumbnail.png",
+  },
+  {
+    slug: "paranoma-house",
+    title: "Paranoma House",
+    summary: "This is the project I made with a team",
+    description: `Hello there, This is an app I created with my friends in my college days.
+
+    It's a simple web app to let people see the hosue in 3D, so basically you can check out the house without going there to check for it, pretty simple, this project mostly for us to learn how to work as a team, has deadlines and just have fun
+    `,
+    tech: ["Next.JS", "Node.JS"],
+    githubUrl: "https://github.com/man0405/chuyen-de-fe",
     // thumbnail: "/your-thumbnail.png",
   },
 ];

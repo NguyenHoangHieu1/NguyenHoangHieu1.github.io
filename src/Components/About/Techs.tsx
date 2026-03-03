@@ -6,14 +6,25 @@ const SKILLS = {
     "HTML5 & CSS3",
     "Tailwind CSS",
     "Redux",
+    "Next.JS",
   ],
-  Backend: ["Node.js", "Express.js", "REST APIs", "MongoDB", "SQL"],
+  Backend: [
+    "Node.js",
+    "Express.js",
+    "REST APIs",
+    "MongoDB",
+    "SQL",
+    "Redis",
+    "Docker",
+    "Nest.JS",
+  ],
   "Tools & Workflow": [
     "Git & GitHub",
     "VS Code",
     "Vite",
     "npm/yarn",
     "Responsive Design",
+    "Linux",
   ],
 } as const;
 
@@ -53,8 +64,7 @@ const Techs = () => {
           Currently exploring
         </h3>
         <p className="text-gray-600 dark:text-gray-400 text-sm">
-          Next.js, Docker, GraphQL, and cloud deployment workflows. Always
-          looking to expand my toolkit.
+          Experiences, clean codes, etc.
         </p>
       </div>
     </section>

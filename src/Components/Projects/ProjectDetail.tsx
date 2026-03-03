@@ -84,6 +84,16 @@ const ProjectDetail = () => {
               GitHub
             </a>
           )}
+          {project.video && (
+            <a
+              href={project.video}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-auto text-sm text-gray-500 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white transition-colors"
+            >
+              Video
+            </a>
+          )}
           {project.liveUrl && (
             <a
               href={project.liveUrl}
